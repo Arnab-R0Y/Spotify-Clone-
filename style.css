@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Supermercado One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(36, 33, 33);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+nav ul{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    /* gap: 3.3vw; */
+    width: 100%;
+}
+
+.brand{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.brand img{
+    width: 144px;
+    height: 45px;
+}
+
+.Navbar_element{
+    color: #70fb5f;
+    /* margin-left: 54px; */
+    font-size: 26px;
+    cursor: pointer;
+    /* padding-right: 20px; */
+    margin-right: 3.3vw;
+}
+
+.search {
+    position: relative;
+}
+
+.search i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    cursor: pointer;
+}
+
+.search input {
+    padding-left: 41px;
+    width: 20vw;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: left;
+}
+
+.LoginSignup{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 1vw;
+}
+
+#Home{
+    margin-left: 54px;
+}
+
+#Contact{
+    /* margin-left: auto; */
+    margin-right: 3.38vw;
+    /* padding-right: 50px; */
+    font-size: 20px;
+    margin-left: 54px;
+}
+
+#Login{
+    margin-left: auto;
+}
+
+#Login::after {
+    content: "|";
+    margin-left: 13px;
+    color: white;
+}
+
+#Signup{
+    padding-right: 50px;
+}
