@@ -26,9 +26,27 @@
     </nav>
 
     <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
-        <div class="progressBarIcons">
-            
+        <div class="songPlaying">
+            <img src="Essentials/Aikatan_logo.jpg" alt="Cover" id="songCover">
+            <div class="songInfo">
+                <span id="songName">Song Name</span>
+                <span id="songArtist">Artist</span>
+            </div>
+        </div>
+
+        <div class="progressBarSection">
+            <div class="progressBarIcons">
+                <i class="fa-solid fa-backward-step icon"></i>
+                <i class="fa-solid fa-play icon"></i>
+                <i class="fa-solid fa-forward-step icon"></i>
+            </div>
+
+            <input type="range" name="range" id="myProgressBar" min="0" max="100" value="0">
+        </div>
+        
+        <div class="volume">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" id="volumeBar" min="0" max="100" value="50">
         </div>
     </div>
     
