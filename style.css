@@ -167,7 +167,7 @@ nav ul{
 
 #myProgressBar::-webkit-slider-runnable-track {
     height: 8px;
-    background: #535353; /* gray */
+    /* background: #535353; */
     border-radius: 10px;
 }
 
