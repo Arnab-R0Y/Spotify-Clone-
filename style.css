@@ -500,3 +500,37 @@ nav ul{
     font-size: 27px;
     font-weight: bold;
 }
+
+.footer {
+    background: #121212;
+    color: #b3b3b3;
+    padding: 40px 20px;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerSection h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footerSection p {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.footerSection p:hover {
+    color: white;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
