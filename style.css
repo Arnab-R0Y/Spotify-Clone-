@@ -398,10 +398,10 @@ nav ul{
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-.Header{
+.Header, .Header2 {
     font-size: 35px;
     font-weight: bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 10px; */
     padding: 10px 20px;
 }
 
@@ -412,6 +412,7 @@ nav ul{
     overflow-x: auto;
     scroll-behavior: smooth;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .carousel::-webkit-scrollbar {
@@ -473,4 +474,29 @@ nav ul{
 .songArtist {
     font-size: 16px;
     color: #b3b3b3;
+}
+
+#myBands {
+    border-radius: 130px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+
+.bandsgrid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bandCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.bandName {
+    font-size: 27px;
+    font-weight: bold;
 }
