@@ -7,7 +7,10 @@
 
 body{
     background-color: black;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 *{
     margin: 0;
@@ -23,6 +26,8 @@ nav{
     display: flex;
     align-items: center;
     border-radius: 30px;
+
+    flex-shrink: 0;
 }
 
 nav ul{
@@ -133,6 +138,16 @@ nav ul{
 
     border-top: 1px solid #2a2a2a;
 
+    opacity: 0;
+    transform: translateY(100%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.showPlayer {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .progressBarSection{
@@ -261,7 +276,8 @@ nav ul{
     display: flex;
     gap: 20px;
     padding: 15px;
-    height: calc(100vh - 150px);
+    flex: 1;
+    /* height: calc(100vh - 75px); */
     /* height: 100vh; */
 }
 
@@ -414,6 +430,10 @@ nav ul{
     display: none;
 }
 
+.songCard {
+    cursor: pointer;
+}
+
 .arrow {
     position: absolute;
     top: 50%;
@@ -447,10 +467,10 @@ nav ul{
 
 .songTitle {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .songArtist {
-    font-size: 14px;
+    font-size: 16px;
     color: #b3b3b3;
 }
